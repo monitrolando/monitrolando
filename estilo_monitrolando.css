@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+	
+	/* Formatação da Fonte das Legendas "Lâmpadas" e "Tomadas" */
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center; /* Alinha todo o texto da página */
+}
+
+/************************ LÂMPADA (RELE 1) *******************************/
+
+/** Div (blocos) onde se encontra a legenda, o botão e  a imagem **/
+#div1{
+	position: absolute;
+	top: 50px; /* Distância em relação ao topo da pg */
+    height: 250px; /* Altura */
+	left:50%;   /* ajuda a ficar no meio */
+	margin-left:-50px; /* ajuda a ficar no meio */
+	
+	/*background-color:#CCF; /* Só pra eu saber onde fica a div */
+}
+
+/** Div (blocos) só para a imagem de ligado ou desligado **/
+div.rele1_ligado {
+    position: absolute;
+    top: 100px;  /* Distância em relação ao topo da pg. Somei o top do div1+50px pro texto da legenda */
+	right: 50px; /* Influência a posição de onde ficará a img de background */
+	left:48%;   /* ajuda a ficar no meio */
+	margin-left:-50px; /* ajuda a ficar no meio */
+    height: 200px;
+    border: none;
+   	background: url(lampada_on.png) no-repeat left top;	
+}
+
+div.rele1_desligado {
+    position: absolute;
+    top: 100px; /* Distância em relação ao topo da pg. Somei o top do div1+50px pro texto da legenda */
+	right: 50px; /* Influência a posição de onde ficará a img de background */
+	left:48%;   /* ajuda a ficar no meio */
+	margin-left:-50px; /* ajuda a ficar no meio */
+    height: 150px;
+    border: none;
+	background: url(lampada_off.png) no-repeat left top;
+	
+}
+
+#botao{
+    position: absolute;
+    right:47%; /*Ou left:52%;   /* ajuda a ficar no meio */
+	top: 260px; /* Distância em relação ao topo da pg. Somei o top do div1 + tam img + 10px de espaço */	
+}
+
+
+/* A formatação a seguir, foi desenvolvida por um site gerador de CSS. Disponível em <http://www.bestcssbuttongenerator.com>. Acesso novembro de 2016. */
+.botao {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+
+.botao:active {
+	position:relative;
+	top:1px;
+}
+
+.botao:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+
+
+/************************ TOMADA (RELE 2) *******************************/
+/** Div (blocos) onde se encontra a legenda, o botão e  a imagem **/
+#div2 {
+	position: absolute;
+	top: 320px; /* Distância em relação ao topo da pg. Somei o top do div1+heigh */
+    height: 250px; /* Altura */
+	left:50%;   /* ajuda a ficar no meio */
+	margin-left:-50px; /* ajuda a ficar no meio */
+	
+	/*border-top-style:double; /* Define somente a borda superior com duas linhas
+	
+	/*background-color:#96C; /* Só pra eu saber onde fica a div */
+}
+
+/** Div (blocos) só para a imagem de ligado ou desligado **/
+div.rele2_ligado {
+    position: absolute;
+    right: 50px;	
+    top: 370px; /* Distância em relação ao topo da pg. Somei o top do div2 + height */
+    height: 150px;
+    border: none;
+	left:48%;   /* ajuda a ficar no meio */
+	margin-left:-50px; /* ajuda a ficar no meio */
+	background: url(tomada_on.png) no-repeat left top;
+}
+
+div.rele2_desligado {
+    position: absolute;
+    right: 50px;
+    top: 370px; /* Distância em relação ao topo da pg. Somei o top do div2 + 50px da legenda */
+    height: 150px;
+    border: none;
+	left:48%;   /* ajuda a ficar no meio */
+	margin-left:-50px; /* ajuda a ficar no meio */
+	background: url(tomada_off.png) no-repeat left top;
+}
+
+#botao_2{
+    position: absolute;
+	right:47%; /*Ou left:52%;   /* ajuda a ficar no meio */
+    top: 530px;  /* Distância em relação ao topo da pg. Somei o top do div1 + tam da img + 10px de espaço */
+}
+
+.botao_2 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+
+.botao_2:active {
+	position:relative;
+	top:1px;
+}
+
+.botao_2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
